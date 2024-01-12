@@ -53,7 +53,7 @@ export default function TechSpin() {
 
   return (
     <div
-      className='w-[65%] aspect-square bg-red relative max-w-[230px] sm:max-w-[260px] lg:h-[220px] lg:w-auto lg:-translate-x-[20%] xl:h-[240px]'
+      className='w-[65%] aspect-square bg-red relative max-w-[230px] lg:h-[220px] lg:w-auto lg:-translate-x-[20%] xl:h-[240px]'
       ref={(node) => {
         squareRef.current = node;
       }}

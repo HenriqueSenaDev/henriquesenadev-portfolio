@@ -35,7 +35,7 @@ export default function Showcase() {
   return (
     <section
       id='home'
-      className="h-[90vh] bg-[url('../assets/images/textures/showcase.png')] bg-no-repeat bg-cover bg-center lg:h-[630px]"
+      className="h-[660px] bg-[url('../assets/images/textures/showcase.png')] bg-no-repeat bg-cover bg-center sm:h-[700px] lg:h-[630px]"
     >
       <div className='h-[inherit] flex flex-col justify-center gap-[70px] lg:flex-row lg:justify-between lg:max-w-[900px] lg:m-auto xl:max-w-[1000px] 2xl:max-w-[1160px]'>
         <nav className='h-[60px] w-full bg-black bg-opacity-45 absolute top-0 left-0 sm:h-[70px]'>
