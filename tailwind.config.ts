@@ -14,6 +14,7 @@ const config: Config = {
       },
       colors: {
         'light-gray': 'rgba(201,201,201,0.3)',
+        'matte-black': '#101010',
       },
     },
   },
