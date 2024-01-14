@@ -7,3 +7,29 @@
   padding: 0;
   margin: 0;
 }
+
+@layer base {
+  section {
+    @apply overflow-hidden;
+  }
+}
+
+@layer utilities {
+
+  /* tiny scroll */
+  .tiny-scroll::-webkit-scrollbar {
+    @apply w-[11px];
+  }
+
+  .tiny-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .tiny-scroll::-webkit-scrollbar-thumb {
+    @apply bg-[#65656F77] rounded-[20px];
+  }
+
+  .tiny-scroll::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#65656FCC];
+  }
+}
