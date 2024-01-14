@@ -1,45 +1,46 @@
+import { ITechnology } from '@/types/technology';
 import javaIcon from '@/assets/images/icons/java.svg';
 import springIcon from '@/assets/images/icons/spring.svg';
+import javascriptIcon from '@/assets/images/icons/javascript.svg';
 import typescriptIcon from '@/assets/images/icons/typescript.svg';
 import reactIcon from '@/assets/images/icons/react.svg';
 import nestjsIcon from '@/assets/images/icons/nestjs.svg';
 import nextjsIcon from '@/assets/images/icons/nextjs.svg';
 
-export interface ITechnology {
-  name: string;
-  description: string;
-  iconSrc: string;
-}
-
 export const technologies: ITechnology[] = [
   {
-    name: 'Java',
-    description: 'Java',
+    name: 'java',
     iconSrc: javaIcon,
+    includeSpin: true,
   },
   {
-    name: 'Spring',
-    description: 'Spring',
+    name: 'spring',
     iconSrc: springIcon,
+    includeSpin: true,
   },
   {
-    name: 'Typescript',
-    description: 'Typescript',
+    name: 'javascript',
+    iconSrc: javascriptIcon,
+  },
+  {
+    name: 'typescript',
     iconSrc: typescriptIcon,
+    includeSpin: true,
   },
   {
-    name: 'React',
-    description: 'React',
+    name: 'react',
     iconSrc: reactIcon,
+    includeSpin: true,
   },
   {
-    name: 'NestJS',
-    description: 'NestJS',
+    name: 'nestjs',
     iconSrc: nestjsIcon,
+    includeSpin: true,
   },
   {
-    name: 'NextJS',
-    description: 'NextJS',
+    name: 'nextjs',
     iconSrc: nextjsIcon,
+    includeSpin: true,
+    dark: true,
   },
 ];

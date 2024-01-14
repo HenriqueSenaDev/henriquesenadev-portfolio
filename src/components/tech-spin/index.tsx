@@ -1,6 +1,7 @@
 'use client';
 
-import { ITechnology, technologies } from '@/data/technologies';
+import { ITechnology } from '@/types/technology';
+import { technologies } from '@/data/technologies';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -16,9 +17,10 @@ interface ISpinTech extends ITechnology {
 
 export default function TechSpin() {
   const [spinTechs, setSpinTechs] = useState<ISpinTech[]>(() => {
-    const radiansGap = 360 / technologies.length;
+    const spinTechs = technologies.filter((x) => x.includeSpin);
+    const radiansGap = 360 / spinTechs.length;
 
-    return technologies.map((tech, index) => ({
+    return spinTechs.map((tech, index) => ({
       ...tech,
       degree: radiansGap * (index - 1),
     }));
