@@ -1,7 +1,7 @@
 import { technologies } from '@/data/technologies';
 import { IStack } from '@/types/stack';
 import { TechColorMap } from '@/types/technology';
-import stackBaseImg from '@/assets/images/stack-base.svg';
+import stackBaseImg from '@/assets/images/vectors/stack-base.svg';
 import Image from 'next/image';
 
 export default function Stack({ name, groups }: IStack) {
