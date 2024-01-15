@@ -7,7 +7,7 @@ import { User, Cake, MapPin, Mail } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className='flex justify-center'>
+    <section id='about' className='flex justify-center'>
       <div className='flex flex-col px-5 pt-8 pb-9 gap-11 items-center relative max-w-[360px] lg:max-w-[900px] lg:px-0 lg:py-16 lg:gap-6 xl:max-w-[1000px] 2xl:max-w-[1160px]'>
         <div className='flex flex-col gap-8 lg:flex-row lg:gap-10 2xl:gap-[70px]'>
           <div className='flex flex-col justify-center items-center relative gap-8 lg:flex-row 2xl:gap-16'>
@@ -91,12 +91,14 @@ export default function About() {
           alt='Java mascot Duke'
         />
 
-        <button className='flex gap-2 items-center text-sm border-black border-[1px] py-2 px-3 rounded-xl max-w-[152px] shadow-light hover:bg-slate-200 xl:text-base 2xl:text-[17px] 2xl:max-w-[170px] 2xl:gap-3'>
-          <Mail className='h-5 xl:h-7' />
+        <a href='#contact'>
+          <button className='flex gap-2 items-center text-sm border-black border-[1px] py-2 px-3 rounded-xl max-w-[152px] shadow-light hover:bg-slate-200 xl:text-base 2xl:text-[17px] 2xl:max-w-[170px] 2xl:gap-3'>
+            <Mail className='h-5 xl:h-7' />
 
-          <span>Fale comigo!</span>
-        </button>
+            <span>Fale comigo!</span>
+          </button>
+        </a>
       </div>
-    </div>
+    </section>
   );
 }

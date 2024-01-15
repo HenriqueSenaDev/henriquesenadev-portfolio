@@ -23,7 +23,10 @@ export default function DevelopmentStacks() {
   }
 
   return (
-    <section className="bg-[url('../assets/images/textures/stacks-gray.png')] bg-no-repeat bg-cover bg-center">
+    <section
+      id='stack'
+      className="bg-[url('../assets/images/textures/stacks-gray.png')] bg-no-repeat bg-cover bg-center"
+    >
       <div className='flex items-center justify-center bg-matte-black h-[74px] text-xl text-white lg:text-[22px] 2xl:text-2xl'>
         <h1>Stacks de Desenvolvimento</h1>
       </div>
