@@ -1,4 +1,5 @@
 import About from '@/sections/about';
+import Contact from '@/sections/contact';
 import DevelopmentStacks from '@/sections/dev-stacks';
 import Showcase from '@/sections/showcase';
 
@@ -10,6 +11,8 @@ export default function Home() {
       <About />
 
       <DevelopmentStacks />
+
+      <Contact />
     </main>
   );
 }
