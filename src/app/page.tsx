@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import About from '@/sections/about';
 import Contact from '@/sections/contact';
 import DevelopmentStacks from '@/sections/dev-stacks';
@@ -13,6 +14,8 @@ export default function Home() {
       <DevelopmentStacks />
 
       <Contact />
+
+      <Footer />
     </main>
   );
 }
