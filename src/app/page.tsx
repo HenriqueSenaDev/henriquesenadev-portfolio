@@ -2,6 +2,7 @@ import Footer from '@/components/footer';
 import About from '@/sections/about';
 import Contact from '@/sections/contact';
 import DevelopmentStacks from '@/sections/dev-stacks';
+import Projects from '@/sections/projects';
 import Showcase from '@/sections/showcase';
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <About />
 
       <DevelopmentStacks />
+
+      <Projects />
 
       <Contact />
 
