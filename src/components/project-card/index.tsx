@@ -77,6 +77,7 @@ export default function ProjectCard(project: IProject) {
               <a
                 className='flex items-center gap-[10px] cursor-pointer hover:text-slate-300'
                 href={githubLink}
+                target='_blank'
               >
                 <Github className='w-5 aspect-square text-[inherit] sm:w-[22px]' />
 
@@ -87,6 +88,7 @@ export default function ProjectCard(project: IProject) {
                 <a
                   className='flex gap-[10px] items-center cursor-pointer hover:text-slate-300'
                   href={webLink}
+                  target='_blank'
                 >
                   <MousePointer2 className='rotate-90 w-5 aspect-square text-[inherit] sm:w-[22px]' />
 

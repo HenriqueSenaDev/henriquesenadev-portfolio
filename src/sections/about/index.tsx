@@ -1,9 +1,12 @@
+'use client';
+
+import { User, Cake, MapPin, Mail } from 'lucide-react';
+import { smoothScroll } from '@/utils/dom';
 import Image from 'next/image';
 import devSelfie from '@/assets/images/entities/dev-selfie.png';
 import dukeWine from '@/assets/images/entities/duke-wine.png';
 import duke from '@/assets/images/entities/duke.png';
 import awsBadge from '@/assets/images/icons/badge.svg';
-import { User, Cake, MapPin, Mail } from 'lucide-react';
 
 export default function About() {
   return (
@@ -91,7 +94,7 @@ export default function About() {
           alt='Java mascot Duke'
         />
 
-        <a href='#contact'>
+        <a onClick={() => smoothScroll('contact')}>
           <button className='flex gap-2 items-center text-sm border-black border-[1px] py-2 px-3 rounded-xl max-w-[152px] shadow-light hover:bg-slate-200 xl:text-base 2xl:text-[17px] 2xl:max-w-[170px] 2xl:gap-3'>
             <Mail className='h-5 xl:h-7' />
 
