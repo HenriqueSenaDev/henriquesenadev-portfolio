@@ -12,6 +12,7 @@ const javaLanguageGroup: IStackGroup = {
     'Generics',
     'Java IO',
     'Swing UI',
+    'Apache Ant',
     'Apache Maven',
   ],
 };
@@ -66,6 +67,7 @@ const reactGroup: IStackGroup = {
     'State management',
     'React Hooks (state, effect, context, ref)',
     'Conditional Rendering',
+    'TailwindCSS',
     'NodeRefs',
     'SPAs – ViteJS',
   ],
