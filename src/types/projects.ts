@@ -1,4 +1,3 @@
-import { StaticImageData } from 'next/image';
 import { TechName } from './technology';
 
 export interface IProject {
@@ -7,5 +6,5 @@ export interface IProject {
   githubLink: string;
   webLink?: string;
   technologies: TechName[];
-  images: StaticImageData[];
+  images: string[];
 }
