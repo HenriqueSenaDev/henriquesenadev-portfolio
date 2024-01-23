@@ -1,6 +1,6 @@
 import { technologies } from '@/data/technologies';
 import { IStack } from '@/types/stack';
-import { TechColorMap } from '@/types/technology';
+import { StackTechName, TechColorMap } from '@/types/technology';
 import stackBaseImg from '@/assets/images/vectors/stack-base.svg';
 import Image from 'next/image';
 
@@ -21,7 +21,7 @@ export default function Stack({ name, groups }: IStack) {
 
       <div className='max-w-[190px] flex flex-col gap-3 m-auto h-[75vh] overflow-auto tiny-scroll sm:max-w-[210px] lg:max-w-[230px] 2xl:max-w-[250px]'>
         {groups.map(({ techName, label, items }) => {
-          const bgClass = colorVariants[techName];
+          const bgClass = colorVariants[techName as StackTechName];
           const tech = technologies.find((x) => x.name === techName);
 
           return (

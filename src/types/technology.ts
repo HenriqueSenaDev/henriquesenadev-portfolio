@@ -23,6 +23,15 @@ export type TechName =
   | 'react query'
   | 'vitesjs';
 
+export type StackTechName =
+  | 'java'
+  | 'spring'
+  | 'javascript'
+  | 'typescript'
+  | 'react'
+  | 'nestjs'
+  | 'nextjs';
+
 export type TechColorMap = {
-  [Property in TechName]: string;
+  [Property in StackTechName]: string;
 };
