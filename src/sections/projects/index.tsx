@@ -33,15 +33,15 @@ export default function Projects() {
       </h1>
 
       <motion.div className='flex' animate={{ x: `-${projectIndex}00%` }}>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
         ))}
       </motion.div>
 
       <div className='flex gap-2 relative m-auto w-[320px] justify-center'>
         {projects.map((project, index) => (
           <div
-            key={index}
+            key={project.title}
             // eslint-disable-next-line
             className={`h-[7px] aspect-square rounded-[50%] bg-white ${index === projectIndex ? 'bg-opacity-90' : 'bg-opacity-20'}`}
           />

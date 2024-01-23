@@ -1,10 +1,11 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { ImageLoader } from 'next/image';
 import { useState } from 'react';
-import { technologies } from '@/data/technologies';
 import { IProject } from '@/types/projects';
+import { technologies } from '@/data/technologies';
 import { ChevronLeft, ChevronRight, Github, MousePointer2 } from 'lucide-react';
+import { projectImageLoader } from '@/utils/optimizing';
 
 export default function ProjectCard(project: IProject) {
   const [imgIndex, setImgIndex] = useState<number>(0);
@@ -34,14 +35,19 @@ export default function ProjectCard(project: IProject) {
 
   return (
     <div className='min-w-full px-5'>
-      <div className='rounded-[20px] text-white p-6 pb-11 bg-white bg-opacity-5 max-w-[320px] m-auto shadow-[0_0_10px_4px_rgba(255,255,255,0.2)] sm:max-w-[360px] lg:max-w-[720px] lg:p-9 xl:max-w-[850px] xl:p-11'>
+      <div className='rounded-[20px] text-white p-6 pb-11 bg-white bg-opacity-5 max-w-[320px] m-auto shadow-[0_0_10px_4px_rgba(255,255,255,0.2)] sm:max-w-[360px] lg:max-w-[820px] lg:p-9 xl:max-w-[920px] xl:p-11 2xl:max-w-[950px]'>
         <div className='flex flex-col lg:flex-row lg:gap-8 xl:gap-10'>
           <div className='relative lg:w-[45%]'>
-            <Image
-              className='w-full rounded-lg mb-6'
-              src={images[imgIndex]}
-              alt='project thumb'
-            />
+            <div className='flex items-center w-full aspect-video mb-6'>
+              <Image
+                src={images[imgIndex]}
+                loader={projectImageLoader as ImageLoader}
+                className='rounded-lg'
+                width={360}
+                height={202}
+                alt='project thumb'
+              />
+            </div>
 
             <div className='flex gap-2 items-center justify-center max-w-[80%] m-auto'>
               <ChevronLeft
@@ -99,7 +105,7 @@ export default function ProjectCard(project: IProject) {
           </div>
         </div>
 
-        <div className='flex gap-3 items-center text-[17px] mt-9 sm:text-lg lg:text-xl xl:text-2xl 2xl:gap-4'>
+        <div className='flex flex-wrap gap-3 items-center text-[17px] mt-9 sm:text-lg lg:text-2xl xl:text-2xl 2xl:gap-5'>
           <h3>Tecnologias:</h3>
 
           {usedTechnologies.map((tech) => {
@@ -107,7 +113,7 @@ export default function ProjectCard(project: IProject) {
 
             return (
               <Image
-                className='h-8 sm:h-9 2xl:h-12'
+                className='h-8 sm:h-9 lg:h-10 2xl:h-12'
                 key={tech}
                 src={iconSrc as string}
                 alt={`${tech} icon`}
