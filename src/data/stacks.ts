@@ -42,6 +42,7 @@ const javaScriptGroup: IStackGroup = {
     'Programação Funcional',
     'Promises e Assincronismo',
     'Package Managers (Npm, Yarn)',
+    'Style Guides',
     'Bundlers',
   ],
 };
