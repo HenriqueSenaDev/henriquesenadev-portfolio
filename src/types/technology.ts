@@ -12,7 +12,16 @@ export type TechName =
   | 'typescript'
   | 'react'
   | 'nestjs'
-  | 'nextjs';
+  | 'nextjs'
+  | 'postgresql'
+  | 'apache ant'
+  | 'apache maven'
+  | 'tailwind css'
+  | 'jwt'
+  | 'axios'
+  | 'react hook form'
+  | 'react query'
+  | 'vitesjs';
 
 export type TechColorMap = {
   [Property in TechName]: string;
