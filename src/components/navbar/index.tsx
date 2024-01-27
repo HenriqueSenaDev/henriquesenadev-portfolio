@@ -25,12 +25,12 @@ export default function Navbar() {
       href: 'about',
     },
     {
-      label: 'Stacks',
-      href: 'stack',
-    },
-    {
       label: 'Projetos',
       href: 'projects',
+    },
+    {
+      label: 'Stacks',
+      href: 'stack',
     },
     {
       label: 'Contato',

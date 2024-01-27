@@ -15,9 +15,9 @@ export default function Home() {
 
       <About />
 
-      <DevelopmentStacks />
-
       <Projects />
+
+      <DevelopmentStacks />
 
       <Contact />
 
