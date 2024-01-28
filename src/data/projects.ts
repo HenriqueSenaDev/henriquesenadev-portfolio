@@ -27,7 +27,7 @@ const presenterAdmin: IProject = {
 const presenterWeb: IProject = {
   title: 'Presenter Web',
   description:
-    'Gerenciamento de eventos com competições entre equipes e avaliações de jurados, integrado juntamente ao projeto presenter-admin. Projeto acadêmico realizado na EEEP Alfredo Nunes de Melo, Acopiara - CE, Brasil',
+    'Gerenciamento de eventos com competições entre equipes e avaliações de jurados, integrado juntamente ao projeto presenter-admin. Projeto acadêmico realizado na EEEP Alfredo Nunes de Melo, Acopiara - CE, Brasil.',
   githubLink: 'https://github.com/HenriqueSenaDev/presenter-web',
   technologies: [
     'typescript',
@@ -46,4 +46,26 @@ const presenterWeb: IProject = {
   ],
 };
 
-export const projects: IProject[] = [presenterWeb, presenterAdmin, anmCrud];
+const mindLab: IProject = {
+  title: 'MindLab',
+  description:
+    'Estrutura de plataforma virtual para o ensino de programação a pessoas com o Transtorno do Espectro Autista (TEA). Princípios neurocientíficos e metodologias de ensino eficazes, como personalização do tema do ambiente de estudo, videoaulas e FAQ.',
+  githubLink: 'https://github.com/HenriqueSenaDev/mind-lab',
+  webLink: 'https://mind-lab-frontend.vercel.app',
+  technologies: ['typescript', 'react', 'vitesjs'],
+  images: [
+    'mind-lab/showcase.png',
+    'mind-lab/personalization.png',
+    'mind-lab/home.png',
+    'mind-lab/lesson.png',
+    'mind-lab/theme.png',
+    'mind-lab/home-colored.png',
+  ],
+};
+
+export const projects: IProject[] = [
+  presenterWeb,
+  presenterAdmin,
+  mindLab,
+  anmCrud,
+];
