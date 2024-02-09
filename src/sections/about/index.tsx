@@ -2,6 +2,7 @@
 
 import { User, Cake, MapPin, Mail } from 'lucide-react';
 import { smoothScroll } from '@/utils/dom';
+import { getDevAge } from '@/utils/common';
 import Image from 'next/image';
 import devSelfie from '@/assets/images/entities/dev-selfie.png';
 import dukeWine from '@/assets/images/entities/duke-wine.png';
@@ -34,7 +35,7 @@ export default function About() {
                     Icon: User,
                   },
                   {
-                    content: '16/08/2005 - 18 anos',
+                    content: `16/08/2005 - ${getDevAge()} anos`,
                     Icon: Cake,
                   },
                   {
