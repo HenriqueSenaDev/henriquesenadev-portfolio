@@ -63,9 +63,26 @@ const mindLab: IProject = {
   ],
 };
 
+const enemTimer: IProject = {
+  title: 'Enem Timer',
+  description:
+    'Temporizador para auxílio no estudo de questões e redação para ENEM e vestibulares. Tabela de tempo geral e por questão, para feedback do desempenho do usuário, tempos customizados, reset e omissão de tempo.',
+  githubLink: 'https://github.com/HenriqueSenaDev/enem-timer',
+  webLink: 'https://enem-timer.vercel.app',
+  technologies: ['typescript', 'react', 'tailwind css', 'vitesjs'],
+  images: [
+    'enem-timer/home.png',
+    'enem-timer/modal.png',
+    'enem-timer/running.png',
+    'enem-timer/hidden.png',
+    'enem-timer/essay.png',
+  ],
+};
+
 export const projects: IProject[] = [
   presenterWeb,
   presenterAdmin,
+  enemTimer,
   mindLab,
   anmCrud,
 ];

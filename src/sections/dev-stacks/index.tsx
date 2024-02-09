@@ -44,9 +44,9 @@ export default function DevelopmentStacks() {
           className='flex lg:w-[900px] lg:m-auto lg:flex lg:justify-center lg:gap-[120px] xl:w-[1000px] xl:gap-[160px] 2xl:w-[1160px] 2xl:gap-[210px]'
           animate={xTranslate}
         >
-          <Stack {...javaStack} />
-
           <Stack {...js_ts_Stack} />
+
+          <Stack {...javaStack} />
         </motion.div>
       </div>
     </section>
